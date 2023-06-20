@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+.toast-container{
+  width: 150px;
+}
+
+.toast{
+  min-height: 32px;
+  padding: 8px 12px;
+  font-size: 14;
+}
+
+.toast-success{
+  background-color: rgb(19, 212, 45);
+  color: white;
+}
+
+.toast.error{
+  background-color: rgb(184, 36, 36);
+  color: white;
+}

@@ -1,3 +1,33 @@
+input {
+  border: 1px solid red;
+}
+
+.toast-container {
+  width: 150px;
+}
+
+.toast {
+  min-height: 32px;
+  padding: 8px 12px;
+  font-size: 14;
+}
+
+.toast-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toast-success {
+  background-color: rgb(19, 212, 45);
+  color: white;
+}
+
+.toast-error {
+  background-color: rgb(238, 106, 106);
+  color: white;
+}
+
 .App {
   text-align: center;
 }
