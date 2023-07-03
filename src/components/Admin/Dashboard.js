@@ -6,8 +6,14 @@ import Footer from "../Footer";
 import NumberCard from "./NumberCard";
 import "../Styles/NumberCard.css";
 import axios from "axios";
+import {useNavigate} from 'react-router-dom';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Dashboard = () => {
+
+  //const useNavigate = useNavigate();
+
   const [userCount, setUserCount] = useState("No Data");
 
   useEffect(() => {
@@ -61,10 +67,13 @@ const Dashboard = () => {
     });
   } )
 
+
+
   return (
     <>
       <Header />
       <Navigation />
+      <ToastContainer />
       <div className="main">
         <div className="content">
           <div className="usedFor">

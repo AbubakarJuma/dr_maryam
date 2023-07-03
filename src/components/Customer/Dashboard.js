@@ -12,6 +12,25 @@ const Dashboard = () =>{
                         <i className="fa fa-dashboard"></i> -->Main Dashboard
                     </h2>
                 </div>
+                <div class="column">
+        <div class="profile">
+            <h2>Customer Profile </h2>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Phone:</strong> 123-456-7890</p>
+            <p><strong>Address:</strong> 123 Main St, City, State, Zip</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="profile">
+            <h2>Account Profile </h2>
+            <p><strong></strong></p>
+            <p><strong>Created Date:</strong> jane.smith@example.com</p>
+            <p><strong>Account Status:</strong> 987-654-3210</p>
+            <p><strong>Account No:</strong> 456 Elm St, City, State, Zip</p>
+        </div>
+    </div>
+    <div class="clearfix"></div>
 
             </div>
         </div><Footer /></>

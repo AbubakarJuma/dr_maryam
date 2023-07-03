@@ -21,6 +21,13 @@ import AppList from "./components/Customer/AppList";
 import SecurityChanges from "./components/Customer/SecurityChange";
 import ViewApplication from "./components/Admin/ViewApplication";
 
+import MultiStepForm from "./components/Customer/MultiStepForm";
+import MyTable from "./MyTable";
+import RegisterForm from "./RegisterForm";
+
+
+
+
 const App = () => {
   return (
     <Router>
@@ -28,7 +35,7 @@ const App = () => {
 
         // admin components
 
-        <Route exact path="/" component={ModelForm} />
+        <Route exact path="/" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/customer" component={CustomerList} />
@@ -42,10 +49,19 @@ const App = () => {
         // customer components
 
         <Route path="/user-dash" component={DashboardUser} />
-        <Route path="/apply" component={Application} />
+        <Route path="/applssy" component={Application} />
         <Route path="/my-app-list" component={AppList} />
-        <Route path="/changes" component={SecurityChanges} />
         <Route path="/applications/:appID" component={ViewApplication} />
+        <Route path="/changes" component={SecurityChanges} />
+
+        <Route path="/apply" component={MultiStepForm} />
+
+        <Route path="/test" component={MyTable} />
+
+        <Route path="/rgs" component={RegisterForm} />
+
+        
+
 
       </Switch>
     </Router>
