@@ -3,7 +3,7 @@ const MyTable = () => {
 
   return (
     <div>
-      <h1>Hellow BITAM</h1>
+      <h1>Hellow AM SAID BITAM</h1>
 
       <table>
         <thead>
