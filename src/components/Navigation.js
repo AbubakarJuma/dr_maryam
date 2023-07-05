@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './Styles/Navigation.css';
 import './Styles/Responsive.css';
 import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
 const Navigation = () =>{
+    const [username,setUsername] = useState('');
+
+    useEffect(() =>{
+        const storename = localStorage.getItem('username');
+
+        setUsername(storename);
+    },[]);
+
+
+
     return(
         <div className="navigation">
             {/* <img src="/zuch.png" style={{"width":"100px"}}></img> */}
@@ -17,6 +27,8 @@ const Navigation = () =>{
             <p><a href="/approve"><i className="fa fa-check-square-o"> </i> Approved Application</a></p>
             <p><a href="/security"><i className="fa fa-gears"> </i> Security Change</a></p>
             <p><a href="/"><i className="fa fa-sign-out"> </i> Logout</a></p>
+
+            <p className="logn-name" style={{"margin-top":"130px"}} ><span>Login as</span> {username}</p>
         </div>
     ); 
 }

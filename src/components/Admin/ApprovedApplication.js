@@ -82,6 +82,7 @@ const ApprovedApplication = () => {
                 <tr>
                   <th>ID</th>
                   <th>Customer Name</th>
+                  <th>Customer Address</th>
                   <th>CustomerPhone</th>
                   <th>Application Name</th>
                   <th> Date</th>
@@ -94,6 +95,7 @@ const ApprovedApplication = () => {
                   <tr key={item.appID}>
                     <td>{index + 1}</td>
                     <td>{item.owner.ownerName}</td>
+                    <td>{item.owner.location}</td>
                     <td>{item.owner.phonenumber}</td>
                     <td>{item.appName}</td>
                     <td>{item.appDate}</td>

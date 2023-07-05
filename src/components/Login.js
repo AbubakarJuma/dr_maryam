@@ -29,9 +29,19 @@ const Login = () =>{
           if(resp.password === password){
               //alert("success")
               //history.push('/dashboard');
+              localStorage.setItem("username",username);
 
               if(resp.role === 'customer'){
-                history.push('/user-dash');
+                //history.push('/user-dash');
+                toast.success("Login successfull", {
+                  className: "toast-success",
+                  position: toast.POSITION.TOP_RIGHT,
+                  autoClose: 5000,
+                });
+
+                setTimeout(() => {
+                  history.push('/user-dash');
+                }, 3000);
               }
               if(resp.role === 'admin'){
                 toast.success("Login successfull", {
@@ -39,8 +49,12 @@ const Login = () =>{
                   position: toast.POSITION.TOP_RIGHT,
                   autoClose: 5000,
                 });
-                history.push('/dashboard');
-              }
+                //history.push('/dashboard');
+                              // Delay for 3 seconds (3000 milliseconds)
+              setTimeout(() => {
+                history.push("/dashboard");
+              }, 3000);
+            }
               
           }else{
             alert("Please enter valid password");
@@ -48,7 +62,7 @@ const Login = () =>{
         }
       }).catch((err)=>{
         //alert("Error"+err);
-        toast.error("Incorrect cridentials ", {
+        toast.error("Invalid user ", {
           className: "toast-error",
           position: toast.POSITION.TOP_RIGHT,
           autoClose: 5000,

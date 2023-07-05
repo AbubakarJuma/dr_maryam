@@ -30,3 +30,14 @@
 a:hover{
     color: lawngreen;
 }
+
+
+.logn-name{
+    color: yellow;
+    margin-top: 550px;
+    margin-left: 50px;
+}
+
+.logn-name span{
+    color: white;
+}
