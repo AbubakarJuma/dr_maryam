@@ -67,7 +67,7 @@ function MultiStepForm() {
 
                 <div class="input-box">
                     <span class="details">
-                        <i className="fa fa-calendar"></i> DOB
+                        <i className="fa fa-calendar"></i> Date of Birth
                     </span>
                     <input
                         type="date"

@@ -9,15 +9,15 @@ const Dashboard = () =>{
             <div className="content">
                 <div className="usedFor">
                     <h2>
-                        <i className="fa fa-dashboard"></i> -->Main Dashboard
+                        <i className="fa fa-dashboard"></i> Main Dashboard
                     </h2>
                 </div>
                 <div class="column">
         <div class="profile">
             <h2>Customer Profile </h2>
-            <p><strong>Name:</strong> John Doe</p>
-            <p><strong>Email:</strong> john.doe@example.com</p>
-            <p><strong>Phone:</strong> 123-456-7890</p>
+            <p><strong>Name:</strong> Abubakar Juma</p>
+            <p><strong>Email:</strong> abubakajuma2468@gmail.com</p>
+            <p><strong>Phone:</strong> 0672727063</p>
             <p><strong>Address:</strong> 123 Main St, City, State, Zip</p>
         </div>
     </div>

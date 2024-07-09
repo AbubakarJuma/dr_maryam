@@ -78,7 +78,7 @@ const Dashboard = () => {
         <div className="content">
           <div className="usedFor">
             <h2>
-              <i className="fa fa-dashboard"></i> -->Main Dashboard
+              <i className="fa fa-dashboard"></i> Main Dashboard
             </h2>
           </div>
 
